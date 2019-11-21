@@ -9,6 +9,7 @@ import GridContainer from "./components/Grid/GridContainer.js";
 import GridItem from "./components/Grid/GridItem.js";
 import HeaderLinks from "./components/Header/HeaderLinks.js";
 import Parallax from "./components/Parallax/Parallax.js";
+import Footer from "./components/Footer/Footer.js";
 
 import styles from "./assets/jss/profilePage.js";
 import profile from './images/mateus.jpg';
@@ -49,7 +50,7 @@ function App() {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Mateus Piló Dias</h3>
-                    <h5 className={classes.spaceTop} >Full-Stack Developer</h5>
+                    <h6 className={classes.spaceTop} >FULL-STACK DEVELOPER</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-github"} />
                     </Button>
@@ -69,9 +70,20 @@ function App() {
                 </div>
               </GridItem>
             </GridContainer>
+
+            <div className={classes.description}>
+              <p>
+              Desenvolvedor de Softwares WEB e MOBILE na cidade de São José do Rio Preto, 
+              com atuação na área desde 2012, portifólio feito como prova de conhecimento e 
+              estudo de novas tecnologias.
+              </p>
+            </div>
+            
           </div>
         </div>
+        <Footer/>
       </div>
+      
     </div>
   );
 }
